@@ -7,7 +7,10 @@ from lightgbm import LGBMClassifier
 from imblearn.ensemble import BalancedRandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.ensemble import StackingClassifier
+import warnings
 
+
+warnings.filterwarnings("ignore")
 
 # Load the trained model
 model = joblib.load("./stacked_model.joblib")  # Replace with actual model filename
